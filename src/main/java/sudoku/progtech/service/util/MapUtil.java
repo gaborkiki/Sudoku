@@ -16,4 +16,19 @@ public class MapUtil {
         }
         return result;
     }
+
+    public boolean isMapCompleted(MapVO mapVO){
+        boolean result = true;
+
+        int[][] map = mapVO.getValues();
+        for(int[] row:map) {
+            for(int number: row){
+                if(number == 0){
+                    result = false;
+                    break;
+                }
+            }
+        }
+        return result;
+    }
 }
