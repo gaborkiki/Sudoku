@@ -1,6 +1,14 @@
 package sudoku.progtech;
 
+import sudoku.progtech.model.GameState;
 import sudoku.progtech.model.MapVO;
+import sudoku.progtech.service.command.Command;
+import sudoku.progtech.service.command.InputHandler;
+import sudoku.progtech.service.command.impl.ExitCommand;
+import sudoku.progtech.service.command.impl.PrintCommand;
+import sudoku.progtech.service.game.GameController;
+import sudoku.progtech.service.game.GameStepPerformer;
+import sudoku.progtech.service.input.UserInputReader;
 import sudoku.progtech.service.map.MapReaderFacade;
 import sudoku.progtech.service.map.parser.MapParser;
 import sudoku.progtech.service.map.reader.MapReader;
@@ -14,6 +22,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -35,6 +45,19 @@ public class Main {
         MapReaderFacade mapReaderFacade = new MapReaderFacade(mapReader, mapParser, mapValidator);
         MapVO mapVO = mapReaderFacade.readMap();
 
-        System.out.println(mapVO);
+        GameState gameState = new GameState(mapVO, false);
+
+        BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
+        UserInputReader userInputReader = new UserInputReader(stdin);
+
+        List<Command> commandList = Arrays.asList(
+                new PrintCommand(),
+                new ExitCommand()
+        );
+        InputHandler inputHandler = new InputHandler(commandList);
+        GameStepPerformer gameStepPerformer = new GameStepPerformer(userInputReader, inputHandler);
+
+        GameController gameController = new GameController(gameState, mapUtil, gameStepPerformer);
+        gameController.gameLoop();
     }
 }
