@@ -52,7 +52,7 @@ public class Main {
 
         List<Command> commandList = Arrays.asList(
                 new PrintCommand(),
-                new ExitCommand()
+                new ExitCommand(gameState)
         );
         InputHandler inputHandler = new InputHandler(commandList);
         GameStepPerformer gameStepPerformer = new GameStepPerformer(userInputReader, inputHandler);

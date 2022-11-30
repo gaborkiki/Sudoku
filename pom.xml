@@ -95,6 +95,10 @@
                 <version>0.8.2</version>
                 <configuration>
                     <excludes>
+                    <exclude>sudoku/model/*</exclude>
+                    <exclude>sudoku/Main.*</exclude>
+                    <exclude>sudoku/ui/PrintWrapper</exclude>
+
 
                     </excludes>
                 </configuration>
