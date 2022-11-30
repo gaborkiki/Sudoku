@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="apache-maven-3.82">
+    <ANNOTATIONS>
+      <root url="file://$USER_HOME$/Downloads/ProgTech/apache-maven-3.8.6" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/ProgTech/apache-maven-3.8.6" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Downloads/ProgTech/apache-maven-3.8.6" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$USER_HOME$/Downloads/ProgTech/apache-maven-3.8.6" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/ProgTech/apache-maven-3.8.6" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads/ProgTech/apache-maven-3.8.6" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads/ProgTech/apache-maven-3.8.6" recursive="false" type="SOURCES" />
+  </library>
+</component>

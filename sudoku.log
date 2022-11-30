@@ -1,0 +1,19 @@
+2022-11-30 08:57:33.243 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+2022-11-30 09:03:51.765 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+2022-11-30 09:06:54.698 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+2022-11-30 09:11:57.857 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+2022-11-30 09:17:19.189 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+2022-11-30 09:31:41.780 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+2022-11-30 09:33:39.707 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+2022-11-30 09:37:57.602 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+sudoku.progtech.service.exception.MapParseException: Number of rows was incorrect, it was0
+	at sudoku.progtech.service.map.parser.MapParser.checkNumberOfRows(MapParser.java:59)
+	at sudoku.progtech.service.map.parser.MapParser.parse(MapParser.java:20)
+	at sudoku.progtech.service.map.MapReaderFacade.readMap(MapReaderFacade.java:31)
+	at sudoku.progtech.Main.main(Main.java:37)
+2022-11-30 09:49:09.870 [main] ERROR s.p.service.map.MapReaderFacade - Unknown exception!
+sudoku.progtech.service.exception.MapParseException: Number of rows was incorrect, it was0
+	at sudoku.progtech.service.map.parser.MapParser.checkNumberOfRows(MapParser.java:59)
+	at sudoku.progtech.service.map.parser.MapParser.parse(MapParser.java:20)
+	at sudoku.progtech.service.map.MapReaderFacade.readMap(MapReaderFacade.java:31)
+	at sudoku.progtech.Main.main(Main.java:37)
